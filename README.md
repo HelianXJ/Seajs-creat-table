@@ -7,8 +7,6 @@ seajs官网说：seajs是一个模块加载器，所以学习它并不难。
 
 在我的理解就是：本来我们是需要手动创建 script标签 引入 js文件的，但用seajs后，它就自动帮我们完成这些工作。
 
- 
-
  这里只说实现原理，具体使用请看seajs官网：http://seajs.org/docs/
 
 下面总结一下：
@@ -27,17 +25,15 @@ seajs官网说：seajs是一个模块加载器，所以学习它并不难。
 
 　　其内部代码会创建一个script标签，把src设置成你要引入的js文件，然后append到DOM文档中进行加载，
 
-　　当加载完毕后，再把这个script标签移除掉，所以当我们审查元素时看不到有那个<script>标签，
+　　当加载完毕后，再把这个script标签移除掉，所以当我们审查元素时看不到有那个script标签，
 
 　　但因为文件已经引入了，即使把这个script移除也不会影响代码使用.
 
 　　我们可以用360卫士限制网速的功能，把网速降低，然后引入jq,是可以看到它就是这样处理的
 
-　　sea.js,原理,模块化,开发0
+　　sea.js,原理,模块化,开发
 
 加载完毕后，sea.js会把这个script标签移除：
-
-sea.js,原理,模块化,开发1
 
 总的一句 ： 就是利用 script 标签进行模块加载
 
@@ -55,14 +51,21 @@ sea.js,原理,模块化,开发1
 
 　　so,  exports对象就出场啦， 当你使用sea.js定义一个模块的时候，你可以把你的 对外函数接口 都放在exports对象上，　　如： 
 
-1 define(function (require, exports, module){
-2     var arr = [12,3,4,5,56];
-3     var method = function (){ 
-4         //code...
-5      }
-6     exports.arr = arr;   //对外接口
-7     exports.method = method;  //对外接口
-8 })
+ define(function (require, exports, module){
+
+     var arr = [12,3,4,5,56];
+
+     var method = function (){ 
+     
+         //code...
+      }
+
+     exports.arr = arr;   //对外接口
+
+     exports.method = method;  //对外接口
+
+ })
+
 当别一个文件要依赖此文件时， 调用 require( url )时，返回值就是这个exports对象，所以就解决了接口的问题。
 
 同时也很好的解决了命名冲突的问题，就算几个同事都用一样的名字，也不会有问题。
