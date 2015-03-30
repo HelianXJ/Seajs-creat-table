@@ -1,0 +1,133 @@
+@bgcolor: #def0f0;
+@wordcolor: #9ba1a1;
+body,
+span,
+input,
+table,
+tr,
+td
+{
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+	color: @wordcolor;
+	overflow: hidden;
+	border: 1px solid @wordcolor;
+ 	
+	.options 
+	{
+		padding: 10px;
+		margin: 10px;
+		background: @bgcolor;
+	}
+	
+	.leftitle 
+	{
+		font-size: 14px;
+		color: @wordcolor;
+		line-height: 24px;
+		padding-right: 22px;
+	}
+	
+	.wrap_info 
+	{
+		height: 315px;
+		background: @bgcolor;
+		margin: 20px 10px;
+	}
+	
+	.info 
+	{
+		position: relative;
+		width: 344px;
+		margin: 0 auto;
+		padding-top: 64px;
+	}
+	
+	.info_input 
+	{
+		margin: 10px;
+		overflow: hidden;
+	}
+	
+	.input_style 
+	{ 
+		background: #fff;
+		display: inline-block;
+		float: left;
+	}
+	
+	span 
+	{
+		float: left;
+		margin-right: 15px;
+	}
+	
+	input
+	{
+		.input_style;
+	}
+	
+	textarea 
+	{
+		.input_style;
+	}
+	
+	.submit_btn 
+	{
+		float: right;
+		width: 64px;
+		height: 26px;
+		background: #78b8d3;
+		border: none;
+		float: right;
+		color: #fff;
+		cursor: pointer;
+		-moz-border-radius: 5px;     
+		-webkit-border-radius: 5px; 
+		border-radius: 5px;		
+	}
+	
+}
+
+select 
+{
+	border: none;
+	background: @bgcolor;
+	color: @wordcolor;
+}
+
+table
+{
+	width: 580px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #000;
+}
+
+tr
+{
+	height: 30px;
+	text-align: center;
+}
+
+th,
+tr:nth-child(odd) 
+{
+	background:@bgcolor;
+}
+
+
+
+
+
+
+
+
+
+

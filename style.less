@@ -1,0 +1,157 @@
+body,
+span,
+input,
+table,
+tr,
+td
+{
+	margin: 0;
+	padding: 0;
+}
+
+@bgcolor: #def0f0;
+@wordcolor: #9ba1a1;
+
+.segment
+{
+	
+	.bgcolotwhite
+	{
+		border: 1px solid #d1d1d1;
+		background: #fff;
+	}
+
+	.lefttitle
+	{
+		font-size: 14px;
+		color: @wordcolor;
+		line-height: 24px;
+		padding-right: 22px;
+	}
+
+	.info_input
+	{
+		width: 580px;
+		height: 315px;
+		background: @bgcolor;
+		margin: 0 auto;
+		padding-top: 64px;
+		
+		.info_input_title
+		{
+			
+			width: 454px;
+			height: 35px;
+			margin: 0 auto;
+			
+		}
+		.title_span
+		{
+			.lefttitle;
+		}
+		.title_input
+		{
+			width: 145px;
+			height: 24px;
+
+			.bgcolotwhite;
+		}
+		.info_input_enter
+		{
+			
+			width: 454px;
+			height: 106px;
+			margin: 10px auto;
+			overflow: hidden;
+			
+		}
+		
+		.enter_text
+		{
+			display: inline-block;
+			width: 377px;
+			height: 96px;
+			float: left;
+			.bgcolotwhite;
+			resize: none;
+		}
+		
+		.enter_title_span
+		{
+			float:left;
+		}
+		
+		.info_input_btn
+		{
+			
+			width: 411px;
+			height: 30px;
+			margin: 10px auto;
+			
+		}
+		
+		.submit_btn
+		{
+			width: 64px;
+			height: 26px;
+			background: #78b8d3;
+			border: none;
+			float: right;
+			color: #fff;
+			cursor: pointer;
+			-moz-border-radius: 5px;     
+			-webkit-border-radius: 5px; 
+			border-radius: 5px; 
+		}
+	}
+	
+	.result_table
+	{
+		
+		width: 580px;
+		margin: 0 auto;
+		
+		font-size: 14px;
+		color: #000;
+		
+		
+		
+		
+		
+		
+	}
+	tr
+	{
+		height: 30px;
+		text-align: center;
+	}
+	.bluebg_tr
+	{
+		background: @bgcolor;
+	}
+
+	.small_style
+	{
+		
+		width: 580px;
+		height: 50px;
+		background: @bgcolor;
+		line-height: 50px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		display: none;
+		cursor: pointer;
+		
+	}
+	
+	a
+		{
+			cursor: pointer;
+		}
+	a:hover
+	{
+		text-decoration: underline;
+	}
+	
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Trainning</title>
+	<link rel="stylesheet/less" type="text/css" href="index.less" />
+	<script src="less.js" type="text/javascript"></script>
+	
+	
+</head>
+<body>
+	<div id="container">
+		<div class="options">
+			<select id="select">
+				<option value="1">放大时的样子</option>
+				<option value="2">缩小时的样子</option>
+			</select>
+		</div>
+
+
+		<div class="wrap_info">
+			<div class="info">
+				<form action="" method="" >
+					<div class="info_input"> <span>标题 </span><input name="name" type="text" placeholder="text"> </div><br>
+					<div class="info_input"><span>标题 </span> <textarea name="content" id="" cols="30" rows="5" placeholder="text-enter"></textarea> </div>
+					<input class="submit_btn" type="button" value="提交" >
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="sea.js" type="text/javascript"></script>
+	<script>
+     seajs.config({
+          alias: {
+              "jquery": "./jquery"
+         }
+     });
+
+	seajs.use("main.js");
+ </script>
+	<script>
+	
+	</script>
+</body>
+</html>
