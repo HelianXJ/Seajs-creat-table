@@ -1,6 +1,18 @@
 # Seajs_creat_table
 利用Sea.js模块化编程思想实现动态创建表格
 
+### 需求 
+
+- 样式用less实现
+- js用jquery 和 seajs 实现。
+- seajs 需要保护两个模块: builder.js、update.js、main.js 文件
+- builder.js 用于生成表格模块
+- update.js 用于更新输入内容操作模块
+- main.js 主逻辑模块
+
+
+
+
 模块化开发之sea.js实现原理总结
 2014-07-24 00:21
 seajs官网说：seajs是一个模块加载器，所以学习它并不难。
